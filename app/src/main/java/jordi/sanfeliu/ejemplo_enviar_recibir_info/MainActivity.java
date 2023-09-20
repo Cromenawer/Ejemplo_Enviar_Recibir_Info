@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Usuario u = new Usuario(nombre,password);
                     bundle.putSerializable("OBJETO",u);
+                    intent.putExtras(bundle);
 
                     startActivity(intent);
                 }

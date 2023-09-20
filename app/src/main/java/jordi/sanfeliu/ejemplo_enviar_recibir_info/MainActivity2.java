@@ -24,9 +24,14 @@ public class MainActivity2 extends AppCompatActivity {
         }
          */
 
-        Usuario u = (Usuario) bundle.getSerializable("OBJETO");
+        if (bundle != null){
+            Usuario u = (Usuario) bundle.getSerializable("OBJETO");
 
-        Toast.makeText(this, u.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, u.toString(), Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "Bundle es null", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
